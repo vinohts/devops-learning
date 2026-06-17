@@ -12,7 +12,7 @@ pipeline {
 
         stage('Validate') {
             steps {
-                echo 'Validating Infrastructure Files'
+                echo 'Validating Stage'
             }
         }
 
