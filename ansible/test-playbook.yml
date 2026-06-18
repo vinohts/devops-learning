@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+
+    - name: Print Welcome Message
+      debug:
+        msg: "Hello Vino, Ansible is working successfully!"

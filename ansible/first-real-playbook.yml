@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+
+    - name: Create Training Folder
+      file:
+        path: /tmp/vino-devops
+        state: directory
+
+    - name: Create Welcome File
+      copy:
+        dest: /tmp/vino-devops/readme.txt
+        content: |
+          My First Ansible Project
+
+    - name: Print Success Message
+      debug:
+        msg: "Ansible completed successfully"
